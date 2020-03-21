@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="../logicdesignproject-healthcaresystem.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="BoardLogicHealthcareSystem.prj"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="BoardLogicHealthcareSystem.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ConfigurationUnit.prj"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="ConfigurationUnit.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="HealthcareSystemFirstPhase.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="HealthcareSystemFirstPhase.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="HealthcareSystemFirstPhase.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="HealthcareSystemFirstPhase.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="HealthcareSystemFirstPhase.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="HealthcareSystemFirstPhase.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="HealthcareSystemFirstPhase.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="HealthcareSystemFirstPhase.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="HealthcareSystemFirstPhase.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="HealthcareSystemFirstPhase.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="HealthcareSystemFirstPhase.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="HealthcareSystemFirstPhase.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="HealthcareSystemFirstPhase.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="HealthcareSystemFirstPhase.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="HealthcareSystemFirstPhase.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="HealthcareSystemFirstPhase.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="HealthcareSystemFirstPhase.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="HealthcareSystemFirstPhase.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="HealthcareSystemFirstPhase.xst"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="HealthcareSystemFirstPhase_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="HealthcareSystemFirstPhase_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="HealthcareSystemFirstPhase_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="HealthcareSystemFirstPhase_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="HealthcareSystemFirstPhase_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="HealthcareSystemFirstPhase_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="HealthcareSystemFirstPhase_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="HealthcareSystemFirstPhase_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="HealthcareSystemFirstPhase_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="HealthcareSystemFirstPhase_par.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="HealthcareSystemFirstPhase_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="HealthcareSystemFirstPhase_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="HealthcareSystemFirstPhase_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="InformationController.prj"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="InformationController.xst"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="LogicHealthcareSystem.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="LogicHealthcareSystem.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="LogicHealthcareSystem.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="LogicHealthcareSystem.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="LogicHealthcareSystem.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="LogicHealthcareSystem.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="LogicHealthcareSystem.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="LogicHealthcareSystem.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="LogicHealthcareSystemController.prj"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="LogicHealthcareSystemController.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="LogicHealthcareSystemTestBench_isim_beh.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="LogicHealthcareSystemTestBench_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="LogicHealthcareSystem_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="LogicHealthcareSystem_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="LogicHealthcareSystem_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="NervousShockDetector.prj"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="NervousShockDetector.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Register7Bit.prj"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Register7Bit.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TemperatureCalculator_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TemperatureCalculator_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testconf_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testconf_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testlog1_beh.prj"/>
+    <file xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testlog1_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="testlog1_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testlog1_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tstinf_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tstinf_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tstinf_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tstinf_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tstlog_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tstlog_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tstnerv_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tstnerv_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1580111887" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1580111887">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1580118777" xil_pn:in_ck="6959345281240101941" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1580118777">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../comprator4bit.v"/>
+      <outfile xil_pn:name="../fulladder1bit.v"/>
+      <outfile xil_pn:name="../fulladder4bit.v"/>
+      <outfile xil_pn:name="../fuuladder8bit.v"/>
+      <outfile xil_pn:name="../multi4bit.v"/>
+      <outfile xil_pn:name="../src/rtl/benchs/LogicHealthcareSystemTestBench.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/BloodAbnormalityDetector.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/BloodPHAnalyzer.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/BloodTypeClassification.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/Comparator8Bit.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/ConfigurationUnit.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/FallingDetector.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/HealthcareSystemFirstPhase.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/InformationController.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/LogicHealthcareSystem.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/LogicHealthcareSystemController.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/NervousShockDetector.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/ParityErrorChecker.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/PressureAbnormalityDetector.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/PressureAnalyzer.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/Register7Bit.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/TemperatureAbnormalityDetector.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/TemperatureAnalyzer.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/TemperatureCalculator.v"/>
+      <outfile xil_pn:name="../testconf.v"/>
+      <outfile xil_pn:name="../testlog1.v"/>
+      <outfile xil_pn:name="../tstinf.v"/>
+      <outfile xil_pn:name="../tstnerv.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1580116945" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="8811278877955432687" xil_pn:start_ts="1580116945">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1580116945" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="670946211500154535" xil_pn:start_ts="1580116945">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1580116945" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="8721811662031270002" xil_pn:start_ts="1580116945">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1580118787" xil_pn:in_ck="6959345281240101941" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1580118787">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../comprator4bit.v"/>
+      <outfile xil_pn:name="../fulladder1bit.v"/>
+      <outfile xil_pn:name="../fulladder4bit.v"/>
+      <outfile xil_pn:name="../fuuladder8bit.v"/>
+      <outfile xil_pn:name="../multi4bit.v"/>
+      <outfile xil_pn:name="../src/rtl/benchs/LogicHealthcareSystemTestBench.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/BloodAbnormalityDetector.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/BloodPHAnalyzer.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/BloodTypeClassification.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/Comparator8Bit.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/ConfigurationUnit.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/FallingDetector.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/HealthcareSystemFirstPhase.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/InformationController.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/LogicHealthcareSystem.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/LogicHealthcareSystemController.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/NervousShockDetector.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/ParityErrorChecker.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/PressureAbnormalityDetector.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/PressureAnalyzer.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/Register7Bit.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/TemperatureAbnormalityDetector.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/TemperatureAnalyzer.v"/>
+      <outfile xil_pn:name="../src/rtl/modules/TemperatureCalculator.v"/>
+      <outfile xil_pn:name="../testconf.v"/>
+      <outfile xil_pn:name="../testlog1.v"/>
+      <outfile xil_pn:name="../tstinf.v"/>
+      <outfile xil_pn:name="../tstnerv.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1580118793" xil_pn:in_ck="6959345281240101941" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="623418952499437946" xil_pn:start_ts="1580118787">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="tstinf_beh.prj"/>
+      <outfile xil_pn:name="tstinf_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1580118794" xil_pn:in_ck="-3101256224042636311" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-1048511428971440451" xil_pn:start_ts="1580118793">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="tstinf_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1579965082" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1579965082">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1580115644" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="750750947776472339" xil_pn:start_ts="1580115644">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1580115644" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="8721811662031270002" xil_pn:start_ts="1580115644">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1580115644" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1580115644">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1580115644" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-65501502120356005" xil_pn:start_ts="1580115644">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1580115644" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-6388418249795389316" xil_pn:start_ts="1580115644">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1580115644" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="7566078823432934204" xil_pn:start_ts="1580115644">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1580118620" xil_pn:in_ck="404073035613381020" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="-7880303650989007374" xil_pn:start_ts="1580118610">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name=".lso"/>
+      <outfile xil_pn:name="HealthcareSystemFirstPhase.ngr"/>
+      <outfile xil_pn:name="LogicHealthcareSystem.lso"/>
+      <outfile xil_pn:name="LogicHealthcareSystem.ngc"/>
+      <outfile xil_pn:name="LogicHealthcareSystem.ngr"/>
+      <outfile xil_pn:name="LogicHealthcareSystem.prj"/>
+      <outfile xil_pn:name="LogicHealthcareSystem.stx"/>
+      <outfile xil_pn:name="LogicHealthcareSystem.syr"/>
+      <outfile xil_pn:name="LogicHealthcareSystem.xst"/>
+      <outfile xil_pn:name="LogicHealthcareSystemController.prj"/>
+      <outfile xil_pn:name="LogicHealthcareSystemTestBench_stx_beh.prj"/>
+      <outfile xil_pn:name="LogicHealthcareSystem_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1579965110" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="9104389386762980785" xil_pn:start_ts="1579965110">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputRemoved"/>
+    </transform>
+  </transforms>
+
+</generated_project>

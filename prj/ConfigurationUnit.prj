@@ -1,0 +1,3 @@
+verilog work "../src/rtl/modules/Register7Bit.v"
+verilog work "../src/rtl/modules/InformationController.v"
+verilog work "../src/rtl/modules/ConfigurationUnit.v"

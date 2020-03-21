@@ -1,0 +1,5 @@
+set -tmpdir "F:/projectfinal1/prj/xst/projnav.tmp"
+set -xsthdpdir "F:/projectfinal1/prj/xst"
+elaborate
+-ifn InformationController.prj
+-ifmt mixed

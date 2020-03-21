@@ -1,0 +1,3 @@
+verilog work "../src/rtl/modules/InformationController.v"
+verilog work "../tstinf.v"
+verilog work "E:/verilog11/14.7/ISE_DS/ISE//verilog/src/glbl.v"

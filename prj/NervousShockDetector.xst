@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/lenovo/Desktop/projectfinal/prj/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/lenovo/Desktop/projectfinal/prj/xst"
+elaborate
+-ifn NervousShockDetector.prj
+-ifmt mixed

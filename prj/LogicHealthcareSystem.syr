@@ -1,0 +1,920 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: LogicHealthcareSystem.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "LogicHealthcareSystem.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "LogicHealthcareSystem"
+Output Format                      : NGC
+Target Device                      : xc3s400-5-pq208
+
+---- Source Options
+Top Module Name                    : LogicHealthcareSystem
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../fulladder1bit.v" in library work
+Compiling verilog file "../fulladder4bit.v" in library work
+Module <fulladder1bit> compiled
+Compiling verilog file "../multi4bit.v" in library work
+Module <fulladder4bit> compiled
+Compiling verilog file "../fuuladder8bit.v" in library work
+Module <multi4bit> compiled
+Compiling verilog file "../comprator4bit.v" in library work
+Module <fuuladder8bit> compiled
+Compiling verilog file "../src/rtl/modules/TemperatureCalculator.v" in library work
+Module <comprator4bit> compiled
+Compiling verilog file "../src/rtl/modules/TemperatureAnalyzer.v" in library work
+Module <TemperatureCalculator> compiled
+Compiling verilog file "../src/rtl/modules/PressureAnalyzer.v" in library work
+Module <TemperatureAnalyzer> compiled
+Compiling verilog file "../src/rtl/modules/ParityErrorChecker.v" in library work
+Module <PressureAnalyzer> compiled
+Compiling verilog file "../src/rtl/modules/Comparator8Bit.v" in library work
+Module <ParityErrorChecker> compiled
+Compiling verilog file "../src/rtl/modules/BloodTypeClassification.v" in library work
+Module <Comparator8Bit> compiled
+Compiling verilog file "../src/rtl/modules/BloodPHAnalyzer.v" in library work
+Module <BloodTypeClassification> compiled
+Compiling verilog file "../src/rtl/modules/TemperatureAbnormalityDetector.v" in library work
+Module <BloodPHAnalyzer> compiled
+Compiling verilog file "../src/rtl/modules/Register7Bit.v" in library work
+Module <TemperatureAbnormalityDetector> compiled
+Compiling verilog file "../src/rtl/modules/PressureAbnormalityDetector.v" in library work
+Module <Register7Bit> compiled
+Compiling verilog file "../src/rtl/modules/InformationController.v" in library work
+Module <PressureAbnormalityDetector> compiled
+Compiling verilog file "../src/rtl/modules/FallingDetector.v" in library work
+Module <InformationController> compiled
+Compiling verilog file "../src/rtl/modules/BloodAbnormalityDetector.v" in library work
+Module <FallingDetector> compiled
+Compiling verilog file "../src/rtl/modules/NervousShockDetector.v" in library work
+Module <BloodAbnormalityDetector> compiled
+Compiling verilog file "../src/rtl/modules/LogicHealthcareSystemController.v" in library work
+Module <NervousShockDetector> compiled
+Compiling verilog file "../src/rtl/modules/HealthcareSystemFirstPhase.v" in library work
+Module <LogicHealthcareSystemController> compiled
+Compiling verilog file "../src/rtl/modules/ConfigurationUnit.v" in library work
+Module <HealthcareSystemFirstPhase> compiled
+Compiling verilog file "../src/rtl/modules/LogicHealthcareSystem.v" in library work
+Module <ConfigurationUnit> compiled
+Module <LogicHealthcareSystem> compiled
+No errors in compilation
+Analysis of file <"LogicHealthcareSystem.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <LogicHealthcareSystem> in library <work>.
+
+Analyzing hierarchy for module <HealthcareSystemFirstPhase> in library <work>.
+
+Analyzing hierarchy for module <NervousShockDetector> in library <work> with parameters.
+	s0 = "00000"
+	s1 = "00001"
+	s10 = "01010"
+	s11 = "01011"
+	s12 = "01100"
+	s13 = "01101"
+	s14 = "01110"
+	s15 = "01111"
+	s16 = "10000"
+	s17 = "10001"
+	s18 = "10010"
+	s19 = "10011"
+	s2 = "00010"
+	s20 = "10100"
+	s3 = "00011"
+	s4 = "00100"
+	s5 = "00101"
+	s6 = "00110"
+	s7 = "00111"
+	s8 = "01000"
+	s9 = "01001"
+
+Analyzing hierarchy for module <ConfigurationUnit> in library <work>.
+
+Analyzing hierarchy for module <LogicHealthcareSystemController> in library <work> with parameters.
+	S0 = "000"
+	S1 = "001"
+	S2 = "010"
+	S3 = "011"
+	S4 = "100"
+	S5 = "101"
+	S6 = "110"
+
+Analyzing hierarchy for module <PressureAbnormalityDetector> in library <work>.
+
+Analyzing hierarchy for module <BloodAbnormalityDetector> in library <work>.
+
+Analyzing hierarchy for module <FallingDetector> in library <work>.
+
+Analyzing hierarchy for module <TemperatureAbnormalityDetector> in library <work>.
+
+Analyzing hierarchy for module <Register7Bit> in library <work>.
+
+Analyzing hierarchy for module <InformationController> in library <work> with parameters.
+	A = "000"
+	B = "001"
+	C = "010"
+	D = "011"
+	E = "100"
+	F = "101"
+	G = "110"
+
+Analyzing hierarchy for module <ParityErrorChecker> in library <work>.
+
+Analyzing hierarchy for module <PressureAnalyzer> in library <work>.
+
+Analyzing hierarchy for module <BloodPHAnalyzer> in library <work>.
+
+Analyzing hierarchy for module <BloodTypeClassification> in library <work>.
+
+Analyzing hierarchy for module <Comparator8Bit> in library <work>.
+
+Analyzing hierarchy for module <TemperatureCalculator> in library <work>.
+
+Analyzing hierarchy for module <TemperatureAnalyzer> in library <work>.
+
+Analyzing hierarchy for module <comprator4bit> in library <work>.
+
+Analyzing hierarchy for module <multi4bit> in library <work>.
+
+Analyzing hierarchy for module <fuuladder8bit> in library <work>.
+
+Analyzing hierarchy for module <fulladder4bit> in library <work>.
+
+Analyzing hierarchy for module <fulladder1bit> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <LogicHealthcareSystem>.
+Module <LogicHealthcareSystem> is correct for synthesis.
+ 
+Analyzing module <HealthcareSystemFirstPhase> in library <work>.
+Module <HealthcareSystemFirstPhase> is correct for synthesis.
+ 
+Analyzing module <PressureAbnormalityDetector> in library <work>.
+Module <PressureAbnormalityDetector> is correct for synthesis.
+ 
+Analyzing module <ParityErrorChecker> in library <work>.
+Module <ParityErrorChecker> is correct for synthesis.
+ 
+Analyzing module <PressureAnalyzer> in library <work>.
+Module <PressureAnalyzer> is correct for synthesis.
+ 
+Analyzing module <BloodAbnormalityDetector> in library <work>.
+Module <BloodAbnormalityDetector> is correct for synthesis.
+ 
+Analyzing module <BloodPHAnalyzer> in library <work>.
+Module <BloodPHAnalyzer> is correct for synthesis.
+ 
+Analyzing module <BloodTypeClassification> in library <work>.
+Module <BloodTypeClassification> is correct for synthesis.
+ 
+Analyzing module <FallingDetector> in library <work>.
+Module <FallingDetector> is correct for synthesis.
+ 
+Analyzing module <Comparator8Bit> in library <work>.
+Module <Comparator8Bit> is correct for synthesis.
+ 
+Analyzing module <comprator4bit> in library <work>.
+Module <comprator4bit> is correct for synthesis.
+ 
+Analyzing module <TemperatureAbnormalityDetector> in library <work>.
+Module <TemperatureAbnormalityDetector> is correct for synthesis.
+ 
+Analyzing module <TemperatureCalculator> in library <work>.
+Module <TemperatureCalculator> is correct for synthesis.
+ 
+Analyzing module <multi4bit> in library <work>.
+Module <multi4bit> is correct for synthesis.
+ 
+Analyzing module <fulladder4bit> in library <work>.
+Module <fulladder4bit> is correct for synthesis.
+ 
+Analyzing module <fulladder1bit> in library <work>.
+Module <fulladder1bit> is correct for synthesis.
+ 
+Analyzing module <fuuladder8bit> in library <work>.
+Module <fuuladder8bit> is correct for synthesis.
+ 
+Analyzing module <TemperatureAnalyzer> in library <work>.
+Module <TemperatureAnalyzer> is correct for synthesis.
+ 
+Analyzing module <NervousShockDetector> in library <work>.
+	s0 = 5'b00000
+	s1 = 5'b00001
+	s10 = 5'b01010
+	s11 = 5'b01011
+	s12 = 5'b01100
+	s13 = 5'b01101
+	s14 = 5'b01110
+	s15 = 5'b01111
+	s16 = 5'b10000
+	s17 = 5'b10001
+	s18 = 5'b10010
+	s19 = 5'b10011
+	s2 = 5'b00010
+	s20 = 5'b10100
+	s3 = 5'b00011
+	s4 = 5'b00100
+	s5 = 5'b00101
+	s6 = 5'b00110
+	s7 = 5'b00111
+	s8 = 5'b01000
+	s9 = 5'b01001
+Module <NervousShockDetector> is correct for synthesis.
+ 
+Analyzing module <ConfigurationUnit> in library <work>.
+Module <ConfigurationUnit> is correct for synthesis.
+ 
+Analyzing module <Register7Bit> in library <work>.
+Module <Register7Bit> is correct for synthesis.
+ 
+Analyzing module <InformationController> in library <work>.
+	A = 3'b000
+	B = 3'b001
+	C = 3'b010
+	D = 3'b011
+	E = 3'b100
+	F = 3'b101
+	G = 3'b110
+WARNING:Xst:905 - "../src/rtl/modules/InformationController.v" line 52: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <password>
+Module <InformationController> is correct for synthesis.
+ 
+Analyzing module <LogicHealthcareSystemController> in library <work>.
+	S0 = 3'b000
+	S1 = 3'b001
+	S2 = 3'b010
+	S3 = 3'b011
+	S4 = 3'b100
+	S5 = 3'b101
+	S6 = 3'b110
+Module <LogicHealthcareSystemController> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <NervousShockDetector>.
+    Related source file is "../src/rtl/modules/NervousShockDetector.v".
+    Using one-hot encoding for signal <prsstate>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <$old_nextstate_2> of Case statement line 39 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <$old_nextstate_2> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Using one-hot encoding for signal <$old_nextstate_2>.
+    Found 21-bit register for signal <nextstate>.
+    Found 21-bit register for signal <prsstate>.
+    Found 1-bit register for signal <q>.
+    Summary:
+	inferred  43 D-type flip-flop(s).
+Unit <NervousShockDetector> synthesized.
+
+
+Synthesizing Unit <LogicHealthcareSystemController>.
+    Related source file is "../src/rtl/modules/LogicHealthcareSystemController.v".
+WARNING:Xst:646 - Signal <psstate> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 3-bit register for signal <nextstate>.
+    Found 3-bit 8-to-1 multiplexer for signal <nextstate$mux0000> created at line 48.
+    Found 2-bit adder for signal <old_psstate_3$addsub0001> created at line 46.
+    Found 3-bit adder for signal <old_psstate_3$addsub0003> created at line 46.
+    Found 1-bit adder carry out for signal <old_psstate_3$addsub0004> created at line 46.
+    Found 2-bit adder carry out for signal <old_psstate_3$addsub0005> created at line 46.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred   3 Multiplexer(s).
+Unit <LogicHealthcareSystemController> synthesized.
+
+
+Synthesizing Unit <ParityErrorChecker>.
+    Related source file is "../src/rtl/modules/ParityErrorChecker.v".
+    Found 1-bit xor6 for signal <error>.
+    Summary:
+	inferred   1 Xor(s).
+Unit <ParityErrorChecker> synthesized.
+
+
+Synthesizing Unit <PressureAnalyzer>.
+    Related source file is "../src/rtl/modules/PressureAnalyzer.v".
+Unit <PressureAnalyzer> synthesized.
+
+
+Synthesizing Unit <BloodPHAnalyzer>.
+    Related source file is "../src/rtl/modules/BloodPHAnalyzer.v".
+Unit <BloodPHAnalyzer> synthesized.
+
+
+Synthesizing Unit <BloodTypeClassification>.
+    Related source file is "../src/rtl/modules/BloodTypeClassification.v".
+Unit <BloodTypeClassification> synthesized.
+
+
+Synthesizing Unit <comprator4bit>.
+    Related source file is "../comprator4bit.v".
+    Found 1-bit xor2 for signal <e_0$xor0000>.
+    Found 1-bit xor2 for signal <e_1$xor0000>.
+    Found 1-bit xor2 for signal <e_2$xor0000>.
+    Found 1-bit xor2 for signal <e_3$xor0000>.
+Unit <comprator4bit> synthesized.
+
+
+Synthesizing Unit <TemperatureAnalyzer>.
+    Related source file is "../src/rtl/modules/TemperatureAnalyzer.v".
+    Found 8-bit comparator greater for signal <temperatureAbnormality$cmp_gt0000> created at line 25.
+    Found 8-bit comparator less for signal <temperatureAbnormality$cmp_lt0000> created at line 25.
+    Summary:
+	inferred   2 Comparator(s).
+Unit <TemperatureAnalyzer> synthesized.
+
+
+Synthesizing Unit <fulladder1bit>.
+    Related source file is "../fulladder1bit.v".
+    Found 1-bit xor3 for signal <sum>.
+    Summary:
+	inferred   1 Xor(s).
+Unit <fulladder1bit> synthesized.
+
+
+Synthesizing Unit <Register7Bit>.
+    Related source file is "../src/rtl/modules/Register7Bit.v".
+    Found 7-bit register for signal <data>.
+    Summary:
+	inferred   7 D-type flip-flop(s).
+Unit <Register7Bit> synthesized.
+
+
+Synthesizing Unit <InformationController>.
+    Related source file is "../src/rtl/modules/InformationController.v".
+    Using one-hot encoding for signal <pstate>.
+WARNING:Xst:737 - Found 7-bit latch for signal <nstate>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <writeRegP>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <writeRegQ>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 8-bit comparator equal for signal <nstate$cmp_eq0000> created at line 54.
+    Found 7-bit register for signal <pstate>.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <InformationController> synthesized.
+
+
+Synthesizing Unit <ConfigurationUnit>.
+    Related source file is "../src/rtl/modules/ConfigurationUnit.v".
+Unit <ConfigurationUnit> synthesized.
+
+
+Synthesizing Unit <PressureAbnormalityDetector>.
+    Related source file is "../src/rtl/modules/PressureAbnormalityDetector.v".
+Unit <PressureAbnormalityDetector> synthesized.
+
+
+Synthesizing Unit <BloodAbnormalityDetector>.
+    Related source file is "../src/rtl/modules/BloodAbnormalityDetector.v".
+Unit <BloodAbnormalityDetector> synthesized.
+
+
+Synthesizing Unit <Comparator8Bit>.
+    Related source file is "../src/rtl/modules/Comparator8Bit.v".
+Unit <Comparator8Bit> synthesized.
+
+
+Synthesizing Unit <fulladder4bit>.
+    Related source file is "../fulladder4bit.v".
+Unit <fulladder4bit> synthesized.
+
+
+Synthesizing Unit <FallingDetector>.
+    Related source file is "../src/rtl/modules/FallingDetector.v".
+Unit <FallingDetector> synthesized.
+
+
+Synthesizing Unit <multi4bit>.
+    Related source file is "../multi4bit.v".
+Unit <multi4bit> synthesized.
+
+
+Synthesizing Unit <fuuladder8bit>.
+    Related source file is "../fuuladder8bit.v".
+WARNING:Xst:1780 - Signal <C> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <fuuladder8bit> synthesized.
+
+
+Synthesizing Unit <TemperatureCalculator>.
+    Related source file is "../src/rtl/modules/TemperatureCalculator.v".
+WARNING:Xst:646 - Signal <cout> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <X<2:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <TemperatureCalculator> synthesized.
+
+
+Synthesizing Unit <TemperatureAbnormalityDetector>.
+    Related source file is "../src/rtl/modules/TemperatureAbnormalityDetector.v".
+Unit <TemperatureAbnormalityDetector> synthesized.
+
+
+Synthesizing Unit <HealthcareSystemFirstPhase>.
+    Related source file is "../src/rtl/modules/HealthcareSystemFirstPhase.v".
+Unit <HealthcareSystemFirstPhase> synthesized.
+
+
+Synthesizing Unit <LogicHealthcareSystem>.
+    Related source file is "../src/rtl/modules/LogicHealthcareSystem.v".
+Unit <LogicHealthcareSystem> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 5
+ 1-bit adder carry out                                 : 1
+ 2-bit adder                                           : 1
+ 2-bit adder carry out                                 : 1
+ 3-bit adder                                           : 2
+# Registers                                            : 7
+ 1-bit register                                        : 1
+ 21-bit register                                       : 2
+ 3-bit register                                        : 1
+ 7-bit register                                        : 3
+# Latches                                              : 3
+ 1-bit latch                                           : 2
+ 7-bit latch                                           : 1
+# Comparators                                          : 3
+ 8-bit comparator equal                                : 1
+ 8-bit comparator greater                              : 1
+ 8-bit comparator less                                 : 1
+# Multiplexers                                         : 1
+ 3-bit 8-to-1 multiplexer                              : 1
+# Xors                                                 : 29
+ 1-bit xor2                                            : 8
+ 1-bit xor3                                            : 20
+ 1-bit xor6                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1426 - The value init of the FF/Latch q hinder the constant cleaning in the block NervousShockDetectorUnit.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:2677 - Node <prsstate_0> of sequential type is unconnected in block <NervousShockDetectorUnit>.
+WARNING:Xst:2677 - Node <prsstate_1> of sequential type is unconnected in block <NervousShockDetectorUnit>.
+WARNING:Xst:2677 - Node <prsstate_2> of sequential type is unconnected in block <NervousShockDetectorUnit>.
+WARNING:Xst:2677 - Node <prsstate_3> of sequential type is unconnected in block <NervousShockDetectorUnit>.
+WARNING:Xst:2677 - Node <prsstate_4> of sequential type is unconnected in block <NervousShockDetectorUnit>.
+WARNING:Xst:2677 - Node <prsstate_5> of sequential type is unconnected in block <NervousShockDetectorUnit>.
+WARNING:Xst:2677 - Node <prsstate_6> of sequential type is unconnected in block <NervousShockDetectorUnit>.
+WARNING:Xst:2677 - Node <prsstate_7> of sequential type is unconnected in block <NervousShockDetectorUnit>.
+WARNING:Xst:2677 - Node <prsstate_8> of sequential type is unconnected in block <NervousShockDetectorUnit>.
+WARNING:Xst:2677 - Node <prsstate_9> of sequential type is unconnected in block <NervousShockDetectorUnit>.
+WARNING:Xst:2677 - Node <prsstate_10> of sequential type is unconnected in block <NervousShockDetectorUnit>.
+WARNING:Xst:2677 - Node <prsstate_11> of sequential type is unconnected in block <NervousShockDetectorUnit>.
+WARNING:Xst:2677 - Node <prsstate_14> of sequential type is unconnected in block <NervousShockDetectorUnit>.
+WARNING:Xst:2677 - Node <prsstate_15> of sequential type is unconnected in block <NervousShockDetectorUnit>.
+WARNING:Xst:2677 - Node <prsstate_16> of sequential type is unconnected in block <NervousShockDetectorUnit>.
+WARNING:Xst:2677 - Node <prsstate_17> of sequential type is unconnected in block <NervousShockDetectorUnit>.
+WARNING:Xst:2677 - Node <prsstate_19> of sequential type is unconnected in block <NervousShockDetectorUnit>.
+WARNING:Xst:2677 - Node <prsstate_20> of sequential type is unconnected in block <NervousShockDetectorUnit>.
+WARNING:Xst:2677 - Node <prsstate_0> of sequential type is unconnected in block <NervousShockDetector>.
+WARNING:Xst:2677 - Node <prsstate_1> of sequential type is unconnected in block <NervousShockDetector>.
+WARNING:Xst:2677 - Node <prsstate_2> of sequential type is unconnected in block <NervousShockDetector>.
+WARNING:Xst:2677 - Node <prsstate_3> of sequential type is unconnected in block <NervousShockDetector>.
+WARNING:Xst:2677 - Node <prsstate_4> of sequential type is unconnected in block <NervousShockDetector>.
+WARNING:Xst:2677 - Node <prsstate_5> of sequential type is unconnected in block <NervousShockDetector>.
+WARNING:Xst:2677 - Node <prsstate_6> of sequential type is unconnected in block <NervousShockDetector>.
+WARNING:Xst:2677 - Node <prsstate_7> of sequential type is unconnected in block <NervousShockDetector>.
+WARNING:Xst:2677 - Node <prsstate_8> of sequential type is unconnected in block <NervousShockDetector>.
+WARNING:Xst:2677 - Node <prsstate_9> of sequential type is unconnected in block <NervousShockDetector>.
+WARNING:Xst:2677 - Node <prsstate_10> of sequential type is unconnected in block <NervousShockDetector>.
+WARNING:Xst:2677 - Node <prsstate_11> of sequential type is unconnected in block <NervousShockDetector>.
+WARNING:Xst:2677 - Node <prsstate_14> of sequential type is unconnected in block <NervousShockDetector>.
+WARNING:Xst:2677 - Node <prsstate_15> of sequential type is unconnected in block <NervousShockDetector>.
+WARNING:Xst:2677 - Node <prsstate_16> of sequential type is unconnected in block <NervousShockDetector>.
+WARNING:Xst:2677 - Node <prsstate_17> of sequential type is unconnected in block <NervousShockDetector>.
+WARNING:Xst:2677 - Node <prsstate_19> of sequential type is unconnected in block <NervousShockDetector>.
+WARNING:Xst:2677 - Node <prsstate_20> of sequential type is unconnected in block <NervousShockDetector>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 5
+ 1-bit adder carry out                                 : 1
+ 2-bit adder                                           : 1
+ 2-bit adder carry out                                 : 1
+ 3-bit adder                                           : 2
+# Registers                                            : 49
+ Flip-Flops                                            : 49
+# Latches                                              : 3
+ 1-bit latch                                           : 2
+ 7-bit latch                                           : 1
+# Comparators                                          : 3
+ 8-bit comparator equal                                : 1
+ 8-bit comparator greater                              : 1
+ 8-bit comparator less                                 : 1
+# Multiplexers                                         : 1
+ 3-bit 8-to-1 multiplexer                              : 1
+# Xors                                                 : 29
+ 1-bit xor2                                            : 8
+ 1-bit xor3                                            : 20
+ 1-bit xor6                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch q hinder the constant cleaning in the block NervousShockDetector.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:2677 - Node <nstate_4> of sequential type is unconnected in block <InformationController>.
+WARNING:Xst:2677 - Node <pstate_4> of sequential type is unconnected in block <InformationController>.
+
+Optimizing unit <LogicHealthcareSystem> ...
+
+Optimizing unit <NervousShockDetector> ...
+
+Optimizing unit <LogicHealthcareSystemController> ...
+
+Optimizing unit <InformationController> ...
+
+Optimizing unit <multi4bit> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block LogicHealthcareSystem, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 48
+ Flip-Flops                                            : 48
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : LogicHealthcareSystem.ngr
+Top Level Output File Name         : LogicHealthcareSystem
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 88
+
+Cell Usage :
+# BELS                             : 129
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 25
+#      LUT2_L                      : 1
+#      LUT3                        : 22
+#      LUT3_L                      : 2
+#      LUT4                        : 67
+#      LUT4_D                      : 1
+#      MUXF5                       : 9
+# FlipFlops/Latches                : 56
+#      FD                          : 16
+#      FDC                         : 5
+#      FDE                         : 14
+#      FDP                         : 1
+#      FDR                         : 11
+#      FDRS                        : 1
+#      LD                          : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 87
+#      IBUF                        : 64
+#      OBUF                        : 23
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400pq208-5 
+
+ Number of Slices:                       67  out of   3584     1%  
+ Number of Slice Flip Flops:             42  out of   7168     0%  
+ Number of 4 input LUTs:                119  out of   7168     1%  
+ Number of IOs:                          88
+ Number of bonded IOBs:                  88  out of    141    62%  
+    IOB Flip Flops:                      14
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+----------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+-------+
+Clock Signal                                                                                                                | Clock buffer(FF name)                                         | Load  |
+----------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+-------+
+clock                                                                                                                       | BUFGP                                                         | 48    |
+ConfigurationUnit/InformationControllerUnit/nstate_not0001(ConfigurationUnit/InformationControllerUnit/nstate_not000139:O)  | NONE(*)(ConfigurationUnit/InformationControllerUnit/nstate_6) | 6     |
+ConfigurationUnit/InformationControllerUnit/writeRegP_or0000(ConfigurationUnit/InformationControllerUnit/writeRegP_or0000:O)| NONE(*)(ConfigurationUnit/InformationControllerUnit/writeRegP)| 2     |
+----------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------+-------+
+Control Signal                                                                                                                   | Buffer(FF name)                                           | Load  |
+---------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------+-------+
+ConfigurationUnit/InformationControllerUnit/pstate_Acst_inv(ConfigurationUnit/InformationControllerUnit/pstate_Acst_inv1_INV_0:O)| NONE(ConfigurationUnit/InformationControllerUnit/pstate_0)| 6     |
+---------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 4.154ns (Maximum Frequency: 240.743MHz)
+   Minimum input arrival time before clock: 21.879ns
+   Maximum output required time after clock: 7.769ns
+   Maximum combinational path delay: 22.623ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 4.154ns (frequency: 240.743MHz)
+  Total number of paths / destination ports: 90 / 39
+-------------------------------------------------------------------------
+Delay:               4.154ns (Levels of Logic = 3)
+  Source:            NervousShockDetectorUnit/prsstate_13 (FF)
+  Destination:       LogicHealthcareSystemControllerUnit/nextstate_2 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: NervousShockDetectorUnit/prsstate_13 to LogicHealthcareSystemControllerUnit/nextstate_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.626   0.941  NervousShockDetectorUnit/prsstate_13 (NervousShockDetectorUnit/prsstate_13)
+     LUT4_D:I1->LO         1   0.479   0.270  LogicHealthcareSystemControllerUnit/Madd__old_psstate_3_Madd_xor<0>11 (N44)
+     LUT2:I1->O            1   0.479   0.704  LogicHealthcareSystemControllerUnit/Mmux_nextstate_mux000011_SW0 (N23)
+     LUT4:I3->O            1   0.479   0.000  LogicHealthcareSystemControllerUnit/Mmux_nextstate_mux000011 (LogicHealthcareSystemControllerUnit/nextstate_mux0000<0>)
+     FD:D                      0.176          LogicHealthcareSystemControllerUnit/nextstate_2
+    ----------------------------------------
+    Total                      4.154ns (2.239ns logic, 1.915ns route)
+                                       (53.9% logic, 46.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 42163 / 38
+-------------------------------------------------------------------------
+Offset:              21.879ns (Levels of Logic = 18)
+  Source:            tempSensorValue<1> (PAD)
+  Destination:       LogicHealthcareSystemControllerUnit/nextstate_2 (FF)
+  Destination Clock: clock rising
+
+  Data Path: tempSensorValue<1> to LogicHealthcareSystemControllerUnit/nextstate_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.715   1.074  tempSensorValue_1_IBUF (tempSensorValue_1_IBUF)
+     LUT4:I0->O            2   0.479   1.040  HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/g9/g1/x1 (HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/g9/c1)
+     LUT4:I0->O            3   0.479   0.794  HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/g9/g2/cout1 (HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/g9/c2)
+     LUT4:I3->O            2   0.479   1.040  HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/g9/g3/Mxor_sum_xo<0>1 (HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/sum<2>)
+     LUT4:I0->O            2   0.479   0.804  HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/g14/g2/cout1 (HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/g14/c2)
+     LUT4:I2->O            2   0.479   1.040  HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/g14/g3/Mxor_sum_xo<0>1 (HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/sum<6>)
+     LUT4:I0->O            2   0.479   1.040  HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/g19/g2/cout1 (HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/g19/c2)
+     LUT4:I0->O            3   0.479   0.794  HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/g19/g3/cout1 (HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/g19/c3)
+     LUT4:I3->O            4   0.479   1.074  HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/g19/g4/Mxor_sum_xo<0>1 (HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/X<6>)
+     LUT4:I0->O            1   0.479   0.000  HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureAnalyzerUnit/temperatureAbnormality89_SW01 (HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureAnalyzerUnit/temperatureAbnormality89_SW0)
+     MUXF5:I1->O           2   0.314   0.915  HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureAnalyzerUnit/temperatureAbnormality89_SW0_f5 (N29)
+     LUT2:I1->O            1   0.479   0.000  HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureAnalyzerUnit/temperatureAbnormality180_SW01 (HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureAnalyzerUnit/temperatureAbnormality180_SW0)
+     MUXF5:I1->O           1   0.314   0.704  HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureAnalyzerUnit/temperatureAbnormality180_SW0_f5 (N37)
+     LUT4:I3->O            4   0.479   0.838  HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureAnalyzerUnit/temperatureAbnormality180 (abnormaliryVector_2_OBUF)
+     LUT3:I2->O            2   0.479   1.040  LogicHealthcareSystemControllerUnit/Madd_old_psstate_3_addsub0005_lut<0>1 (LogicHealthcareSystemControllerUnit/Madd_old_psstate_3_addsub0005_lut<0>)
+     LUT4_D:I0->LO         1   0.479   0.270  LogicHealthcareSystemControllerUnit/Madd__old_psstate_3_Madd_xor<0>11 (N44)
+     LUT2:I1->O            1   0.479   0.704  LogicHealthcareSystemControllerUnit/Mmux_nextstate_mux000011_SW0 (N23)
+     LUT4:I3->O            1   0.479   0.000  LogicHealthcareSystemControllerUnit/Mmux_nextstate_mux000011 (LogicHealthcareSystemControllerUnit/nextstate_mux0000<0>)
+     FD:D                      0.176          LogicHealthcareSystemControllerUnit/nextstate_2
+    ----------------------------------------
+    Total                     21.879ns (8.704ns logic, 13.175ns route)
+                                       (39.8% logic, 60.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ConfigurationUnit/InformationControllerUnit/nstate_not0001'
+  Total number of paths / destination ports: 55 / 5
+-------------------------------------------------------------------------
+Offset:              5.750ns (Levels of Logic = 5)
+  Source:            data<3> (PAD)
+  Destination:       ConfigurationUnit/InformationControllerUnit/nstate_1 (LATCH)
+  Destination Clock: ConfigurationUnit/InformationControllerUnit/nstate_not0001 falling
+
+  Data Path: data<3> to ConfigurationUnit/InformationControllerUnit/nstate_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.715   1.066  data_3_IBUF (data_3_IBUF)
+     LUT4:I0->O            1   0.479   0.976  ConfigurationUnit/InformationControllerUnit/nstate_cmp_eq0000826 (ConfigurationUnit/InformationControllerUnit/nstate_cmp_eq0000826)
+     LUT4:I0->O            3   0.479   1.066  ConfigurationUnit/InformationControllerUnit/nstate_cmp_eq00008136 (ConfigurationUnit/InformationControllerUnit/nstate_cmp_eq0000)
+     LUT3:I0->O            1   0.479   0.000  ConfigurationUnit/InformationControllerUnit/nstate_mux0000<1>2 (ConfigurationUnit/InformationControllerUnit/nstate_mux0000<1>2)
+     MUXF5:I0->O           1   0.314   0.000  ConfigurationUnit/InformationControllerUnit/nstate_mux0000<1>_f5 (ConfigurationUnit/InformationControllerUnit/nstate_mux0000<1>)
+     LD:D                      0.176          ConfigurationUnit/InformationControllerUnit/nstate_1
+    ----------------------------------------
+    Total                      5.750ns (2.642ns logic, 3.108ns route)
+                                       (45.9% logic, 54.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 21 / 19
+-------------------------------------------------------------------------
+Offset:              7.769ns (Levels of Logic = 2)
+  Source:            NervousShockDetectorUnit/prsstate_12 (FF)
+  Destination:       abnormaliryVector<1> (PAD)
+  Source Clock:      clock rising
+
+  Data Path: NervousShockDetectorUnit/prsstate_12 to abnormaliryVector<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.626   1.074  NervousShockDetectorUnit/prsstate_12 (NervousShockDetectorUnit/prsstate_12)
+     LUT2:I0->O            1   0.479   0.681  NervousShockDetectorUnit/nervousAbnormality<1>1 (abnormaliryVector_1_OBUF)
+     OBUF:I->O                 4.909          abnormaliryVector_1_OBUF (abnormaliryVector<1>)
+    ----------------------------------------
+    Total                      7.769ns (6.014ns logic, 1.755ns route)
+                                       (77.4% logic, 22.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 4178 / 4
+-------------------------------------------------------------------------
+Delay:               22.623ns (Levels of Logic = 15)
+  Source:            tempSensorValue<1> (PAD)
+  Destination:       abnormaliryVector<2> (PAD)
+
+  Data Path: tempSensorValue<1> to abnormaliryVector<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.715   1.074  tempSensorValue_1_IBUF (tempSensorValue_1_IBUF)
+     LUT4:I0->O            2   0.479   1.040  HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/g9/g1/x1 (HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/g9/c1)
+     LUT4:I0->O            3   0.479   0.794  HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/g9/g2/cout1 (HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/g9/c2)
+     LUT4:I3->O            2   0.479   1.040  HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/g9/g3/Mxor_sum_xo<0>1 (HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/sum<2>)
+     LUT4:I0->O            2   0.479   0.804  HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/g14/g2/cout1 (HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/g14/c2)
+     LUT4:I2->O            2   0.479   1.040  HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/g14/g3/Mxor_sum_xo<0>1 (HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/sum<6>)
+     LUT4:I0->O            2   0.479   1.040  HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/g19/g2/cout1 (HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/g19/c2)
+     LUT4:I0->O            3   0.479   0.794  HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/g19/g3/cout1 (HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/g19/c3)
+     LUT4:I3->O            4   0.479   1.074  HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/g1/g19/g4/Mxor_sum_xo<0>1 (HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureCalculatorUnit/X<6>)
+     LUT4:I0->O            1   0.479   0.000  HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureAnalyzerUnit/temperatureAbnormality89_SW01 (HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureAnalyzerUnit/temperatureAbnormality89_SW0)
+     MUXF5:I1->O           2   0.314   0.915  HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureAnalyzerUnit/temperatureAbnormality89_SW0_f5 (N29)
+     LUT2:I1->O            1   0.479   0.000  HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureAnalyzerUnit/temperatureAbnormality180_SW01 (HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureAnalyzerUnit/temperatureAbnormality180_SW0)
+     MUXF5:I1->O           1   0.314   0.704  HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureAnalyzerUnit/temperatureAbnormality180_SW0_f5 (N37)
+     LUT4:I3->O            4   0.479   0.779  HealthcareSystemFirstPhaseUnit/TemperatureAbnormalityDetectorUnit/TemperatureAnalyzerUnit/temperatureAbnormality180 (abnormaliryVector_2_OBUF)
+     OBUF:I->O                 4.909          abnormaliryVector_2_OBUF (abnormaliryVector<2>)
+    ----------------------------------------
+    Total                     22.623ns (11.521ns logic, 11.102ns route)
+                                       (50.9% logic, 49.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.78 secs
+ 
+--> 
+
+Total memory usage is 4513744 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   48 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

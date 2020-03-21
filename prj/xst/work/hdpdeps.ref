@@ -1,0 +1,9 @@
+V3 7
+FL "G:/New Folder/BoardLogicHealthcareSystem.vhd" 2020/01/27.06:00:54 P.20131013
+EN work/BoardLogicHealthcareSystem 1580115361 \
+      FL "G:/New Folder/BoardLogicHealthcareSystem.vhd" PB ieee/std_logic_1164 1381692176
+AR work/BoardLogicHealthcareSystem/Behavioral 1580115362 \
+      FL "G:/New Folder/BoardLogicHealthcareSystem.vhd" \
+      EN work/BoardLogicHealthcareSystem 1580115361 CP HealthcareSystemFirstPhase \
+      CP NervousShockDetector CP ConfigurationUnit \
+      CP LogicHealthcareSystemController

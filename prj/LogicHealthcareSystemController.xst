@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Admin/Desktop/projectfinal/prj/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Admin/Desktop/projectfinal/prj/xst"
+elaborate
+-ifn LogicHealthcareSystemController.prj
+-ifmt mixed
